@@ -1,0 +1,1634 @@
+@charset "UTF-8";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  color: #828282;
+  font-size: 3.6rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 + p {
+  color: #828282;
+  margin: 10px 0 50px 0;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+.easter-egg {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+.easter-egg:hover path {
+  fill: #3cbfa7;
+}
+
+.easter-egg path {
+  fill: #828282;
+  transition: all 0.3s ease-in;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 1%;
+}
+
+.translucent-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  display: none;
+  justify-content: space-between;
+}
+
+.translucent-overlay.show-bars {
+  display: flex;
+}
+
+.translucent-bar {
+  background-color: rgba(225, 225, 225, 0.1);
+  height: 100%;
+  width: 6.5%;
+}
+
+.get-started-now {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 2.0rem;
+  outline: 2px solid transparent;
+  padding: 20px 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.get-started-now:focus {
+  border: 2px solid transparent;
+  color: #3cbfa7;
+  outline: 2px solid #3cbfa7;
+}
+
+.get-started-now:hover {
+  border: 2px solid #3cbfa7;
+  color: #3cbfa7;
+}
+
+#page-header {
+  background-image: url(../img/backgrounds/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#page-header.front-bars {
+  z-index: -2;
+}
+
+#page-header .container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-navbar {
+  display: flex;
+}
+
+.logo-motto {
+  color: #828282;
+  text-align: center;
+  width: 330px;
+}
+
+.logo-motto p {
+  margin: 0;
+}
+
+.logo-motto p:first-child {
+  color: white;
+  font-size: 5.0rem;
+  margin: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.logo-motto p:first-child span {
+  color: #3cbfa7;
+}
+
+.logo-motto p:first-child:hover {
+  color: #3cbfa7;
+}
+
+.menu-open,
+.menu-close {
+  background-color: transparent;
+  border: none;
+  display: none;
+  outline: none;
+}
+
+.menu-open:hover,
+.menu-close:hover {
+  cursor: pointer;
+}
+
+.menu-open:hover svg,
+.menu-close:hover svg {
+  fill: #3cbfa7;
+}
+
+.menu-open svg,
+.menu-close svg {
+  cursor: pointer;
+  fill: #828282;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+  width: 40px;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links li:last-child a {
+  background-color: #3cbfa7;
+  color: white;
+}
+
+.nav-links a {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #828282;
+  outline: 2px solid transparent;
+  padding: 10px;
+  transition: border 0.5s ease-in-out;
+}
+
+.nav-links a:focus {
+  outline: 2px solid white;
+}
+
+.nav-links a:hover {
+  border: 2px solid white;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h1 {
+  color: white;
+  font-size: 6.0rem;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.header-text p {
+  color: #828282;
+  font-size: 2.4rem;
+  margin: 40px auto;
+}
+
+.scroll-down {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #828282;
+  margin: 0 auto 5px auto;
+  outline: 2px solid transparent;
+  padding: 5px 5px 0 5px;
+  text-align: center;
+  text-transform: lowercase;
+  transition: border 0.5s ease-in-out;
+}
+
+.scroll-down:focus {
+  outline: 2px solid #828282;
+}
+
+.scroll-down:hover {
+  border: 2px solid #828282;
+}
+
+.scroll-down p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.scroll-down svg {
+  height: 50px;
+  width: 50px;
+}
+
+.scroll-down g {
+  fill: #828282;
+}
+
+.service-text {
+  width: 60%;
+}
+
+.our-services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  margin-bottom: 50px;
+  width: 33.3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item figure {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.service-item img {
+  margin: 0 auto;
+}
+
+.service-item-text {
+  width: 65%;
+}
+
+.service-item-text h3 {
+  font-size: 2.0rem;
+  margin: 0;
+}
+
+.service-item-text p {
+  color: #828282;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#our-blog {
+  background-color: #eaeaea;
+}
+
+#our-blog a {
+  border: 2px solid #3cbfa7;
+  border-radius: 5px;
+  color: #3cbfa7;
+  outline: 2px solid transparent;
+  padding: 10px 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+#our-blog a:focus {
+  border: 2px solid transparent;
+  color: black;
+  outline: 2px solid black;
+}
+
+#our-blog a:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+.blog-text div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-text p {
+  color: #828282;
+  width: 60%;
+}
+
+.blog-text a {
+  text-transform: uppercase;
+}
+
+.our-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-post {
+  background-color: white;
+  color: #828282;
+  width: 32%;
+}
+
+.blog-post div {
+  padding: 0 20px 20px 20px;
+}
+
+.blog-post h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.blog-post p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.blog-post a {
+  display: inline-block;
+}
+
+#hello {
+  background-image: url(../img/backgrounds/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#hello h2 {
+  color: white;
+  font-weight: normal;
+}
+
+#hello h2 span {
+  text-transform: uppercase;
+}
+
+#hello p {
+  font-size: 2.4rem;
+  margin: 10px 0 50px 0;
+}
+
+#hello p a {
+  color: #828282;
+  transition: all 0.5s ease-in-out;
+}
+
+#hello p a:focus, #hello p a:hover {
+  background-color: #3cbfa7;
+  color: black;
+}
+
+.portfolio-text div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-text select {
+  border: 2px solid #828282;
+  color: #828282;
+  outline: 2px solid transparent;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.portfolio-text select:focus {
+  color: black;
+  outline: 2px solid black;
+}
+
+.portfolio-text select:hover {
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.portfolio-text p {
+  color: #828282;
+  width: 60%;
+}
+
+.our-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  color: #828282;
+  margin-bottom: 50px;
+  width: 32%;
+}
+
+.portfolio-item figure {
+  position: relative;
+}
+
+.portfolio-item figure:hover .overlay {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.portfolio-item h3 {
+  font-weight: normal;
+}
+
+.overlay {
+  background-color: #3cbfa7;
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay svg {
+  border: 1px solid white;
+  border-radius: 50%;
+  fill: white;
+  margin: auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+}
+
+.overlay g {
+  fill: white;
+}
+
+#our-skills {
+  background-color: #eaeaea;
+}
+
+#our-skills .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-text,
+.skills-items {
+  width: 50%;
+}
+
+.skills-text p {
+  margin-bottom: 0;
+}
+
+.skills-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.skills-items p {
+  border: 2px solid #3cbfa7;
+  border-radius: 5px;
+  color: #3cbfa7;
+  display: inline-block;
+  margin: 0 10px 20px 0;
+  padding: 20px 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills-items p:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+#our-twitter {
+  background-image: url(../img/backgrounds/bg4.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color: #eaeaea;
+  text-align: center;
+}
+
+#our-twitter img {
+  margin: 0 auto 20px auto;
+}
+
+#our-twitter a {
+  color: white;
+  outline: 2px solid transparent;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#our-twitter a:nth-of-type(1) {
+  font-size: 2.0rem;
+}
+
+#our-twitter a:focus {
+  color: black;
+  outline: 2px solid black;
+}
+
+#our-twitter a:hover {
+  color: black;
+}
+
+#our-twitter blockquote {
+  margin: 20px auto;
+  width: 75%;
+}
+
+#our-twitter blockquote:before {
+  content: "“";
+  font-size: 2.4rem;
+}
+
+#our-twitter blockquote:after {
+  content: "”";
+  font-size: 2.4rem;
+}
+
+#our-twitter p {
+  color: #3cbfa7;
+  font-style: italic;
+  margin: 20px 0 0 0;
+}
+
+.contact-us {
+  display: flex;
+}
+
+.contact-info,
+.contact-form {
+  width: 50%;
+}
+
+.contact-info p {
+  color: #828282;
+  margin: 20px 0;
+}
+
+.contact-info #map {
+  height: 600px;
+  width: 100%;
+}
+
+.contact-info li {
+  color: #3cbfa7;
+}
+
+.contact-info a {
+  color: #828282;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-info a:focus, .contact-info a:hover {
+  background-color: #3cbfa7;
+  color: black;
+}
+
+.contact-form {
+  padding-left: 20px;
+}
+
+.contact-form p {
+  color: #a4a4a4;
+  margin: 10px 0 25px 0;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  color: #a4a4a4;
+  display: block;
+  margin-bottom: 25px;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+.contact-form label {
+  color: #3cbfa7;
+}
+
+.contact-form label span {
+  color: red;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  outline: 1px solid transparent;
+  padding: 10px;
+  transition: border 0.5s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid #3cbfa7;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 1px solid #3cbfa7;
+}
+
+.contact-form textarea {
+  height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.contact-form input[type=submit] {
+  background-color: transparent;
+  border: 2px solid #3cbfa7;
+  color: #3cbfa7;
+  cursor: pointer;
+  float: right;
+  outline: 2px solid transparent;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  width: auto;
+}
+
+.contact-form input[type=submit]:focus {
+  border: 2px solid transparent;
+  color: black;
+  outline: 2px solid black;
+}
+
+.contact-form input[type=submit]:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+#our-newsletter {
+  background-color: #eaeaea;
+}
+
+.our-newsletter {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.our-newsletter h2,
+.our-newsletter input,
+.our-newsletter p {
+  color: #a4a4a4;
+}
+
+.our-newsletter h2 {
+  font-size: 2.4rem;
+}
+
+.email-subscription {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-field {
+  border: 2px solid transparent;
+  width: 75%;
+  position: relative;
+}
+
+.email-field input {
+  border: 2px solid transparent;
+  border-radius: 3px;
+  outline: 2px solid transparent;
+  padding: 15px 0 15px 60px;
+  transition: border 0.5s ease-in-out;
+  width: 100%;
+}
+
+.email-field input:focus {
+  outline: 2px solid #3cbfa7;
+}
+
+.email-field input:hover {
+  border: 2px solid #3cbfa7;
+}
+
+.email-field .paper-airplane {
+  position: absolute;
+  top: 33%;
+  left: 4%;
+}
+
+.subscribe-btn {
+  border: 2px solid transparent;
+  border-radius: 15%;
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.subscribe-btn:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#page-footer {
+  background-color: #a4a4a4;
+  color: #828282;
+  padding: 25px 0;
+}
+
+#page-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text p:first-child,
+.footer-text p:last-child {
+  margin: 0;
+}
+
+.footer-text p:nth-child(2) {
+  margin: 10px 0;
+}
+
+.footer-text img {
+  display: inline;
+}
+
+.footer-text a {
+  color: #828282;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-text a:focus, .footer-text a:hover {
+  background-color: #3cbfa7;
+  color: black;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media p {
+  padding-right: 10px;
+}
+
+.social-media div {
+  display: flex;
+}
+
+.social-media a {
+  padding: 0 10px;
+}
+
+.social-media a[href*="facebook"]:focus svg,
+.social-media a[href*="facebook"]:hover svg {
+  fill: #3b5998;
+}
+
+.social-media a[href*="twitter"]:focus svg,
+.social-media a[href*="twitter"]:hover svg {
+  fill: #55acee;
+}
+
+.social-media a[href*="forrst"]:focus svg,
+.social-media a[href*="forrst"]:hover svg {
+  fill: #3b7140;
+}
+
+.social-media a[href*="dribbble"]:focus svg,
+.social-media a[href*="dribbble"]:hover svg {
+  fill: #ea4c89;
+}
+
+.social-media svg {
+  fill: #828282;
+  height: 20px;
+  transition: all 0.3s ease-in;
+  width: 20px;
+}
+
+@media screen and (max-width: 1110px) {
+  .easter-egg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    overflow-x: hidden;
+  }
+  .main-navbar {
+    justify-content: space-between;
+  }
+  .logo-motto {
+    width: auto;
+  }
+  .menu-open {
+    display: flex;
+  }
+  .menu-close {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 16px;
+  }
+  .nav-links {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    right: -200px;
+  }
+  .nav-links.show-menu {
+    right: 0;
+  }
+  .header-text h1 {
+    font-size: 5.0rem;
+  }
+  .service-text,
+  .blog-text p,
+  .portfolio-text p {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .skills-text {
+    width: 40%;
+  }
+  .skills-items {
+    width: 60%;
+  }
+  #page-footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-media {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .footer-text {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 765px) {
+  .our-blog {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .our-blog .blog-post:first-child {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 98%;
+  }
+  .our-blog .blog-post:first-child figure {
+    position: relative;
+  }
+  .our-blog .blog-post:first-child figure:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 25px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 60px solid #3cbfa7;
+    height: 0;
+    width: 0;
+  }
+  .our-blog .blog-post:first-child figure:after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    bottom: 25px;
+    border-top: 30px solid transparent;
+    border-right: 60px solid #3cbfa7;
+    border-bottom: 30px solid transparent;
+    height: 0;
+    width: 0;
+  }
+  .our-blog .blog-post {
+    margin: 0;
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .service-item {
+    width: 50%;
+  }
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .service-text,
+  .blog-text p,
+  .portfolio-text p {
+    width: 100%;
+  }
+  #our-skills .container {
+    flex-direction: column;
+  }
+  .skills-text {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .skills-items {
+    justify-content: center;
+    width: 100%;
+  }
+  .skills-items p {
+    margin: 0 10px 10px 0;
+  }
+  .skills-items p:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .our-portfolio {
+    justify-content: space-around;
+  }
+  .portfolio-item {
+    margin-bottom: 10px;
+    width: 48%;
+  }
+  .overlay {
+    height: 35%;
+    width: 25%;
+    opacity: 0.9;
+    visibility: visible;
+    top: initial;
+    right: 0;
+    bottom: 0;
+    left: initial;
+  }
+  .overlay svg {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  .contact-us {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-info,
+  .contact-form {
+    width: 75%;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .contact-info p {
+    order: 1;
+  }
+  .contact-info ul {
+    margin-bottom: 20px;
+    order: 2;
+  }
+  .contact-info #map {
+    border-radius: 5px;
+    order: 3;
+    height: 400px;
+  }
+  .contact-form {
+    order: 1;
+    padding-left: 0;
+  }
+  .contact-form input[type=submit] {
+    float: none;
+    margin: 0 auto;
+  }
+  .our-newsletter {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  section {
+    padding: 25px 0;
+  }
+  .header-text h1 {
+    font-size: 4.0rem;
+  }
+  .header-text p {
+    font-size: 2.0rem;
+  }
+  .service-text {
+    width: 100%;
+  }
+  .service-text p {
+    margin: 10px 0 20px 0;
+  }
+  .service-item {
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .service-item figure {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .blog-text div {
+    display: block;
+    text-align: center;
+  }
+  .blog-text h2 {
+    margin-bottom: 10px;
+  }
+  .blog-text a {
+    display: inline-block;
+  }
+  .our-blog {
+    flex-wrap: wrap;
+  }
+  .blog-post {
+    margin: 0;
+    width: 100%;
+  }
+  #hello h2 {
+    font-size: 3.2rem;
+  }
+  #hello p {
+    margin: 10px 0 25px 0;
+  }
+  .portfolio-text div {
+    display: block;
+    text-align: center;
+  }
+  .portfolio-text h2 {
+    margin-bottom: 10px;
+  }
+  .portfolio-text a {
+    display: inline-block;
+  }
+  #our-twitter blockquote {
+    width: 95%;
+  }
+  .email-field input {
+    padding: 15px 0 15px 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo-motto p:first-child {
+    font-size: 4.0rem;
+  }
+  .logo-motto p:last-child {
+    font-size: 1.4rem;
+  }
+  .portfolio-item {
+    width: 100%;
+  }
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+  .email-subscription {
+    flex-wrap: wrap;
+  }
+  .email-field {
+    width: 100%;
+  }
+  .subscribe-btn {
+    margin: 10px auto 0 auto;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .social-media {
+    flex-direction: column;
+    align-items: space-between;
+  }
+  .social-media p {
+    padding-right: 0;
+  }
+  .social-media div {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 15px 0;
+  }
+  .header-text h1 {
+    font-size: 3.0rem;
+  }
+  .header-text p {
+    font-size: 1.8rem;
+    margin: 25px auto;
+  }
+  .our-newsletter {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .blog-post div {
+    padding: 0 10px 20px 10px;
+  }
+  .skills-items p {
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .header-text h1 {
+    font-size: 2.4rem;
+  }
+  .header-text p {
+    font-size: 1.6rem;
+    margin: 15px;
+  }
+  .get-started-now {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .logo-motto p:first-child {
+    font-size: 2.4rem;
+  }
+  .logo-motto p:last-child {
+    font-size: 1.0rem;
+  }
+  .header-text p {
+    margin: 10px;
+  }
+}
