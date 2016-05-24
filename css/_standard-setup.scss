@@ -1,0 +1,30 @@
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+figure {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}

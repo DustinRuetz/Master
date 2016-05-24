@@ -2,9 +2,7 @@
 _design-files
 
 # Ignored filetypes
-*.scss
 *.txt
-*.cfg
 
 # Windows image file caches
 Thumbs.db
