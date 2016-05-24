@@ -1,3 +1,11 @@
+# Ignored directories
+_design-files
+
+# Ignored filetypes
+*.scss
+*.txt
+*.cfg
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
