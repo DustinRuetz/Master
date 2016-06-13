@@ -26,23 +26,23 @@ h2 {
 h3 {
 	font-size: 2.0rem;
 }
-.easter-egg {
-	cursor: pointer;
-	height: 25px;
-	width: 25px;
+// .easter-egg {
+// 	cursor: pointer;
+// 	height: 25px;
+// 	width: 25px;
 
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	z-index: 1;
-	&:hover path {
-		fill: $teal;
-	}
-	path {
-		fill: $grey-medium;
-		transition: all 0.3s ease-in;
-	}
-}
+// 	position: absolute;
+// 	top: 5px;
+// 	right: 5px;
+// 	z-index: 1;
+// 	&:hover path {
+// 		fill: $teal;
+// 	}
+// 	path {
+// 		fill: $grey-medium;
+// 		transition: all 0.3s ease-in;
+// 	}
+// }
 .container {
 	margin: 0 auto;
 	max-width: 1080px;
